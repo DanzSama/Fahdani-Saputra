@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Halaman Web CSS</title>
+    <style>
+        /* 1. Mengatur latar belakang halaman */
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif; /* 2. Font */
+            margin: 0; /* 3. Margin */
+            padding: 0; /* 4. Padding */
+        }
+
+        /* Header */
+        header {
+            background-color: #007BFF; /* 5. Background-color */
+            color: white; /* 6. Color (warna teks) */
+            text-align: center; /* 7. Text-align */
+            padding: 20px;
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none; /* 8. Text-decoration */
+            margin: 0 15px;
+            font-weight: bold; /* 9. Font-weight */
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* Konten utama */
+        .container {
+            background-color: white;
+            width: 80%; /* 10. Width */
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px; /* 11. Border-radius */
+            box-shadow: 0 0 10px rgba(0,0,0,0.2); /* 12. Box-shadow */
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        p {
+            line-height: 1.6; /* 13. Line-height */
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Selamat Datang di Website Saya</h1>
+        <p>Belajar Dasar CSS</p>
+    </header>
+
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Tentang</a>
+        <a href="#">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <h2>Apa Itu CSS?</h2>
+        <p>
+            CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan elemen-elemen HTML.
+            Dengan CSS, kita dapat mengatur warna, ukuran, posisi, font, dan banyak aspek visual lainnya pada halaman web.
+        </p>
+
+        <h2>Contoh Penggunaan</h2>
+        <p>
+            Pada halaman ini, kita telah menggunakan berbagai properti dasar CSS seperti <b>background-color</b>, 
+            <b>color</b>, <b>font-family</b>, <b>margin</b>, <b>padding</b>, <b>text-align</b>, <b>border-radius</b>, dan lainnya.
+        </p>
+    </div>
+
+</body>
+</html>

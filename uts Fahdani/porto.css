@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #f7f7f2;
+    color: #1e1e24;
+}
+
+/* ===== HEADER ===== */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+}
+
+.logo {
+    color: #1e1e24;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a {
+    display: inline-block;
+    margin: 0 1.5rem;
+    color: #1e1e24;
+    font-weight: 500;
+    transition: all 0.6s;
+}
+
+.navmenu a:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== HOME ===== */
+.home {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 2rem 5rem 0 18rem;
+    gap: 1rem;
+}
+
+.home-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.home-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-text h3 {
+    position: relative;
+    padding-left: 6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.home-text h3::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #1e1e24;
+    left: 0;
+    top: 1rem;
+}
+
+.home-text p {
+    margin-bottom: 2rem;
+}
+
+/* SECTIONS */
+section {
+    padding: 5rem 8rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* ABOUT */
+.about p {
+    max-width: 600px;
+}
+
+/* GALLERY */
+.gallery-img img {
+    width: 100%;
+    height: auto;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.gallery-img video {
+    width: 100%;
+    height: auto;
+    width: 450px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* SKILLS */
+.skills-box {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skills-box span {
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #1e1e24;
+    border-radius: 5px;
+}
+
+/* PROJECTS */
+.project-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* CONTACT */
+.contact form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.8rem;
+    border: 1px solid #1e1e24;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #f7f7f2;
+    border: 1px solid #1e1e24;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    background: #1e1e24;
+    transition: all 0.5s;
+    margin-right: 1rem;
+}
+
+.btn:hover {
+    background: #f7f7f2;
+    color: #1e1e24;
+    transform: translateY(5px);
+}
+
+/* ===== SOCIAL ICONS ===== */
+.socials-icons {
+    position: absolute;
+    top: 40%;
+    padding: 0 8rem;
+}
+
+.socials-icons i {
+    display: block;
+    margin: 25px 0;
+    color: #1e1e24;
+    font-size: 1.5rem;
+    transition: all 0.6s;
+}
+
+.socials-icons i:hover {
+    transform: rotate3d(0, 0, 1, 90deg);
+}
+
+/* ===== SCROLL BUTTON ===== */
+.scroll-btn {
+    position: absolute;
+    bottom: 7%;
+    left: 9%;
+    color: #1e1e24;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}

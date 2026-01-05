@@ -1,0 +1,80 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 5px solid #0056b3;
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 20px;
+}
+
+.about img {
+  border-radius: 50%;
+  width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.skills {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px auto;
+  width: 70%;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  background-color: #e9ecef;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact {
+  text-align: center;
+  padding: 20px;
+  background-color: #dee2e6;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  background-color: #343a40;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pertemuan 16 - Alert & Dialog Box</title>
+</head>
+<body>
+
+<h2>Latihan Tugas Alert dan Dialog Box</h2>
+
+<!-- 1. Alert Box -->
+<button onclick="alert1()">Alert Box</button><br><br>
+
+<!-- 2. Alert seperti contoh -->
+<button onclick="alert2()">Keluar Alert Seperti Ini</button><br><br>
+
+<!-- 3. Dialog Box -->
+<button onclick="dialogBox()">Dialog Box</button><br><br>
+
+<!-- 4. Hasil informasi dari dialog box -->
+<div id="output" style="margin-top:20px; font-size:18px; font-weight:bold;"></div>
+
+<script>
+    function alert1() {
+        alert("Ini adalah Alert Box");
+    }
+
+    function alert2() {
+        alert("Ini adalah contohnya");
+    }
+
+    function dialogBox() {
+        let nama = prompt("Masukkan Nama:");
+        let prodi = prompt("Masukkan Program Studi:");
+
+        if (nama && prodi) {
+            document.getElementById("output").innerHTML = 
+                "Informasi yang diinputkan:<br>" +
+                "Nama : " + nama + "<br>" +
+                "Program Studi : " + prodi;
+        } else {
+            alert("Input tidak boleh kosong!");
+        }
+    }
+</script>
+
+</body>
+</html>
